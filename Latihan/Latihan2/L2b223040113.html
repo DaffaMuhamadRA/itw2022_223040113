@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>Table + form</title>
+  </head>
+  <body>
+    <table border="1" cellspacing="0">
+      <form action="">
+        <tr>
+          <th colspan="3" bgcolor="555653">Input Data Mahasiswa</th>
+        </tr>
+        <tr>
+          <td><label for="username">username</label></td>
+
+          <td>:</td>
+
+          <td><input type="text" id="username" /></td>
+        </tr>
+        <tr>
+          <td><label for="password">Password</label></td>
+          <td>:</td>
+          <td><input type="password" id="password" /></td>
+        </tr>
+        <tr>
+          <td><label for="Fullname">Fullname</label></td>
+          <td>:</td>
+          <td><input type="text" id="Fullname" /></td>
+        </tr>
+        <tr>
+          <td><label for="Email">Email</label></td>
+          <td>:</td>
+          <td><input type="text" id="Email" /></td>
+        </tr>
+        <tr>
+          <td><label for="Agama">Agama</label></td>
+          <td>:</td>
+          <td>
+            <input type="hidden" id="agama" /><select>
+              <option name="Agama" selected>-- Pilih Agama --</option>
+              <option value="Islam">Islam</option>
+              <option value="Kristen">Kristen</option>
+              <option value="Hindu">Hindu</option>
+              <option value="Konghucu">Konghucu</option>
+              <option value="Buddha">Buddha</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Jenis kelamin</td>
+          <td>:</td>
+          <td>
+            <input type="radio" id="pria" name="jeniskelamin" /><label
+              for="pria"
+              >Pria</label
+            >
+            <input type="radio" id="wanita" name="jeniskelamin" /><label
+              for="wanita"
+              >wanita</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td>hobi</td>
+          <td>:</td>
+          <td>
+            <input type="checkbox" id="Musik" /><label for="Musik">Musik</label>
+            <input type="checkbox" id="Olahraga" /><label for="Olahraga"
+              >Olahraga</label
+            >
+            <input type="checkbox" id="Gaming" /><label for="Gaming"
+              >Gaming</label
+            >
+            <input type="checkbox" id="Lainnya" /><label for="Lainnya"
+              >Lainnya</label
+            >
+          </td>
+        </tr>
+        <tr>
+          <td width="100" height="100" align="center">Profil Singkat</td>
+          <td>:</td>
+          <td>
+            <textarea
+              style="resize: none; width: 290px; height: 80px"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3" height="30">
+            <button style="float: right">input</button>
+          </td>
+        </tr>
+      </form>
+    </table>
+  </body>
+</html>
