@@ -1,0 +1,20 @@
+body {
+  background-color: aqua;
+  font-family: Georgia;
+}
+h1 {
+  font-family: sans-serif;
+  font-size: 60px;
+  color: darkblue;
+}
+
+h4 {
+  float: right;
+  font-style: italic;
+}
+h3 {
+  padding-top: 50px;
+}
+p {
+  text-align: justify;
+}
