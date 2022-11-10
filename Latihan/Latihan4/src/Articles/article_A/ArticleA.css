@@ -1,0 +1,295 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* css page T4b-articleA */
+/* header */
+.container {
+  width: 1348px;
+  margin: auto;
+  background-color: white;
+}
+.main-head {
+  background-color: wheat;
+}
+.header {
+  height: 80px;
+  border-bottom: 3px solid maroon;
+}
+.header-logo {
+  font-family: cursive, sans-serif;
+  font-size: 32px;
+  float: left;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+.header-list ul li {
+  list-style: none;
+  float: left;
+  padding-left: 20px;
+  padding-top: 32px;
+  font-size: 22px;
+}
+.header-list a {
+  text-decoration: none;
+  color: #6d9886;
+}
+.header-list a:hover {
+  color: #80489c;
+  background-color: white;
+}
+/* -----hero---- */
+.hero {
+  height: 380px;
+  background-image: url(../../img/taylorswift.jpg);
+  background-size: cover;
+  border-bottom: 3px solid maroon;
+  background-repeat: no-repeat;
+  background-position: 0 -30px;
+}
+/* -----News--- */
+.container {
+  background-color: #f0f0f0;
+}
+.content {
+  width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  float: left;
+}
+.content h1 {
+  font-family: "lucida sans";
+  font-size: 40px;
+  font-weight: bold;
+  text-align-last: auto;
+}
+.content p {
+  margin-top: 20px;
+}
+.content b {
+  font-weight: bold;
+  font-style: italic;
+}
+.content img {
+  height: 450px;
+  vertical-align: middle;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+/* footer */
+.footer {
+  margin-top: 30px;
+  background-color: black;
+  width: 100%;
+  height: 30px;
+  float: left;
+}
+.copy {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+/* ----siderbar---- */
+.side {
+  width: 300px;
+  float: right;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  margin: 20px;
+}
+.side h3 {
+  font-family: cursive;
+  margin-left: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.side img {
+  width: 200px;
+  border-radius: 50%;
+  border: 3px solid #b8d10f;
+  margin-left: 10px;
+}
+.side p {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+/* coba Style Animation */
+.SM p {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  font-size: 4rem;
+  background: linear-gradient(to bottom, #000, #000 60%, #fff 60%, #fff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-repeat: no-repeat;
+  transition: background 0.2s ease-out;
+  white-space: nowrap;
+}
+
+.SM span {
+  position: relative;
+}
+
+.SM span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 15px;
+  background: #000;
+  bottom: 9px;
+  transition: all 0.2s ease-out;
+}
+
+.SM p:hover {
+  background-position: 0 11px;
+}
+
+.SM span:hover:before {
+  transform: translateY(10px);
+}
+.SM a {
+  text-decoration: none;
+  color: transparent;
+}
+/* micro clear cf */
+.cf:before,
+.cf:after {
+  content: " "; /* 1 */
+  display: table; /* 2 */
+}
+
+.cf:after {
+  clear: both;
+}
+.cf {
+  *zoom: 1;
+}
