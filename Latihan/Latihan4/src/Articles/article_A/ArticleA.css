@@ -192,6 +192,9 @@ table {
 .content p {
   margin-top: 20px;
 }
+.content span {
+  margin-left: 20%;
+}
 .content b {
   font-weight: bold;
   font-style: italic;
@@ -204,10 +207,10 @@ table {
 }
 /* footer */
 .footer {
-  margin-top: 30px;
+  padding: 10px;
   background-color: black;
   width: 100%;
-  height: 30px;
+  height: 20px;
   float: left;
 }
 .copy {
@@ -233,7 +236,7 @@ table {
   width: 200px;
   border-radius: 50%;
   border: 3px solid #b8d10f;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .side p {
   margin-top: 20px;
@@ -279,6 +282,20 @@ table {
 .SM a {
   text-decoration: none;
   color: transparent;
+}
+
+/* sumber */
+.sumber {
+  font-family: cambria;
+  font-size: 20px;
+}
+.sumber a {
+  text-decoration: none;
+  color: #44c01f;
+}
+.sumber a:hover {
+  color: yellow;
+  background-color: black;
 }
 /* micro clear cf */
 .cf:before,
