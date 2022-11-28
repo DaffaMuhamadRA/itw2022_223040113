@@ -301,14 +301,16 @@
 .footer {
   margin-top: 30px;
   width: 100%;
-  height: 45px;
+  height: 40px;
   background-color: #ffcbcb;
 }
 .footer img {
-  width: 20px;
-  height: 20px;
+  padding-top: 2px;
+  width: 30px;
+  height: 30px;
   float: left;
 }
 .footer h1 {
+  padding-top: 6px;
   font-size: 20px;
 }
