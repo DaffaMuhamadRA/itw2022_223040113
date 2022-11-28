@@ -1,0 +1,46 @@
+.kotak1 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: auto;
+  z-index: 9999;
+}
+
+.move {
+  top: 0;
+  left: 0;
+  background-color: black;
+  opacity: 0;
+}
+
+.move a {
+  width: 100px;
+  height: 100px;
+}
+
+.move:target {
+  right: 0;
+  bottom: 0;
+  animation: bouncing 10s forwards;
+}
+
+/* animasi */
+@keyframes bouncing {
+  0% {
+    margin-top: 0;
+    opacity: 0;
+  }
+
+  25% {
+    margin-top: 100px;
+  }
+
+  60% {
+    margin-top: 10px;
+  }
+
+  100% {
+    margin-top: 100px;
+    opacity: 1;
+  }
+}

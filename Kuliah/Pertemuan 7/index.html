@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Modern CSS</title>
+    <style>
+      .kotak1 {
+        width: 150px;
+        height: 150px;
+        /* background-color: blueviolet; */
+        /* alpha channel = ketika sebuah warna background transparans, tapi tidak dengan tulisan*/
+        background-color: rgba(0, 255, 255, 0.5);
+
+        margin: auto;
+        /* border-radius ketika ingin menjadi setengah lingkaran tidak bisa memakai % melainkan harus memakai fixed atau memakai px
+        contohnya border-radius:0 75px 75px 0; */
+        border-radius: 50% 0 0 0;
+        /* opacity = transparansi element */
+        /* opacity: 1; */
+        /* opacity: 0.2; */
+        margin-top: -100px;
+        position: relative;
+        /* z-index = Posisi diatas posisi / ketika sebuha bentuk ingin diatas bentuk lain */
+        z-index: -10;
+        /* overflow = fixed pada bentuk */
+        /* overflow: hidden; */
+      }
+      .p {
+        position: relative;
+      }
+      .kotak2 {
+        width: 200px;
+        height: 200px;
+        background-color: lightblue;
+        margin: auto;
+        /* <x-offset>= posisi kanan-kiri <y-offset>= posisi atas-bawah <blur>=blur dari box-shadow <size>= ukuran <color>=warna; */
+        /* insert= elemen shadow nya masuk ke dalam element dengan sintaks box-shadow:insert <x> <y> <blur> <color>; */
+        box-shadow: 0 0 0 10px red, 0 0 0 20px blue, 0 0 0 30px yellow,
+          0 0 0 40px orange;
+        border-radius: 75px 75px 0 0;
+        /* bayangan bisa menjadi 2 atau lebih / bertumpuk, dengan syntaks box-shadow: 10px 15px 5px red, -10px -15px -5px blue; */
+        /* sytaks : box-shadow : syntaks shadow 1, syntaks shadow 2, syntaks shadow 3, syntaks shadow 4, ... */
+      }
+      h1 {
+        text-align: center;
+        margin-top: 100px;
+        font-family: Arial;
+        font-size: 100px;
+        color: white;
+        /* elementnya sama dengan box shadow, tapi ini di text */
+        text-shadow: 5px 5px 5px red;
+      }
+      .kotak3 {
+        width: 200px;
+        height: 200px;
+        background-color: lightgreen;
+        margin: auto;
+        font-size: 50px;
+        text-align: center;
+        line-height: 200px;
+
+        /* transform; translate = perubahan posisi, tapi tidak menganggu element yang lain dengan ketentuan (x,y) atau translateY() dan translateX().
+          */
+        /* transform; skale = perubahan besar dengan ukuran (1) yang dibaca 1x lipat, dst. */
+        /* transform; Skew = pembuatan element menjadi miring, dengan ketentuan (x-deg) drajat kemiringan contohnya (10 deg). Skew ini dapat miringkan menjadi (x,y) atau SkewX(), dan SkewY(). */
+        /* transform; rotate = merubah perputaran element, dengan syntaks rotate(x-deg) contohnya (90 deg) yang dibaca 90 derajat perputanan element searah jarum jam. */
+        /* transform: ; */
+        /* transition = keadaan dimana emelent berubah, disarankan transisiton disimpan pada awal trransform bukan di akhir transform  dengan sintaks */
+        transition: 5s transform, 10s background-color;
+
+        /* transition: 2s background-color, 3s 2s rotate, 3s 3s; */
+        /* transition; transform: 5s 3s; dibaca 5 detik transisi, 3 detik delay.  */
+      }
+      .kotak3:hover {
+        transform: rotate(720deg);
+        background-color: bisque;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus nisi
+      eaque, non facilis ea maxime optio? Harum deserunt ut voluptatibus odio
+      veniam facere eos officiis soluta. Tempore, quam! Repudiandae, hic
+      laudantium beatae est ipsa impedit eum mollitia iure sequi ullam error
+      expedita magnam iste qui suscipit, consequuntur sed! Fugit, praesentium.
+    </p>
+    <div class="kotak1"></div>
+    <div class="kotak2"></div>
+    <h1>Dans</h1>
+    <div class="kotak3">1</div>
+  </body>
+</html>
